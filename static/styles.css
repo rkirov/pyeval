@@ -1,0 +1,65 @@
+body {
+    width: 900px;
+    margin: auto;
+    background: #d7d7d7;
+}
+
+img { 
+    float: left;
+}
+
+#editbox {
+    border-color: #999 #ccc #ccc;
+    border-width: 1px;
+    border-style: solid;
+    background: white;
+    position: relative;
+    clear: both;
+}
+
+#loader {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -110px;
+}
+
+#output {
+    background: white;
+    border: 1px solid black;
+}
+
+#answer{
+    margin: 10px;
+    text-align: left;
+    font-family: monospace;
+}
+
+#header h1{
+    font-size: 62px;
+    text-shadow: 0px 2px 3px #555;
+    font-family: sans-serif;
+    padding: 58px 0px;
+    /* margin: 15px;
+    border-bottom: 1px solid black; */
+}
+
+.button{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 5px;
+    background: white;
+
+}
+
+h2 {
+    padding: 10px;
+
+}
+
+#footer{
+    margin: 10px;
+    font-style: italic;
+    text-align: right;
+    font-size: small;
+}

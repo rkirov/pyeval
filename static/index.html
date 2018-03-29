@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="CodeMirror-2.12/lib/codemirror.js"></script>
+        <link rel="stylesheet" href="CodeMirror-2.12/lib/codemirror.css">
+        <script src="CodeMirror-2.12/mode/python/python.js"></script>
+        <link rel="stylesheet" href="CodeMirror-2.12/theme/default.css">
+        <script src="jquery-1.5.min.js"></script>
+        <script src="index.js"> </script>
+        <link type="text/css" rel="stylesheet" href="reset.css">
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>Python Evaluator</title></head>
+<body>
+<div id="header"><a href="http://www.python.org"><img src='python-logo.png'/></a><h1>Evaluator</h1></div>
+        <div id='editbox'>
+            <textarea cols=80 rows=5 id='input'>print(2 + 2)</textarea>
+            <img id='loader' src='ajax-loader.gif'>
+        </div>
+        <input type='button' id='compute_button' value='evaluate'> or press <span class="button">Shift</span>+<span class="button">Enter</span>
+        <br>
+        <div id='output'>
+        <h2> Output 
+        <span id='permalink'></span></h2>
+        <pre id='answer'></pre>
+        </div>
+        <div id="footer">
+            <a href="http://radokirov.com">Radoslav Kirov</a> July 2011
+        </div>
+</body></html>
