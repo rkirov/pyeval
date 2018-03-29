@@ -93,15 +93,9 @@ class GetID(webapp2.RequestHandler):
         self.response.out.write(json.dumps({'exec_string': cell.exec_string}))
 
 
-def main():
-    application = webapp2.WSGIApplication([
-        webapp2.Route('/', webapp2.RedirectHandler,
-                      defaults={'_uri': 'static/index.html'}),
-        ('/exec', AJAXHandler),
-        ('/get_id', GetID),
-        ('/worker', ExecuteWorker)], debug=True)
-    application.run()
-
-
-if __name__ == '__main__':
-    main()
+app = webapp2.WSGIApplication([
+    webapp2.Route('/', webapp2.RedirectHandler,
+                  defaults={'_uri': 'static/index.html'}),
+    ('/exec', AJAXHandler),
+    ('/get_id', GetID),
+    ('/worker', ExecuteWorker)], debug=True)
